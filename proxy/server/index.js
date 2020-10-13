@@ -13,13 +13,13 @@ app.use('/', express.static(path.join(__dirname, '../client')));
 // --- MIDDLEWARE: http-proxy-middleware ---
 
 // -- Gallery Section --
-app.use(
-  '/photos/:id',
-  createProxyMiddleware({
-    target: 'http://18.216.243.227/',
-    changeOrigin: true,
-  })
-);
+// app.use(
+//   '/photos/:id',
+//   createProxyMiddleware({
+//     target: 'http://18.216.243.227/',
+//     changeOrigin: true,
+//   })
+// );
 
 // -- Booking Section--
 
